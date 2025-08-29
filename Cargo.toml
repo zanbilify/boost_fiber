@@ -1,0 +1,26 @@
+[package]
+name = "boost_fiber"
+description = "Boost C++ library boost_fiber packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_fiber"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_fiber"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_algorithm = { version = "0.1.0", path = "../boost_algorithm" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_context = { version = "0.1.0", path = "../boost_context" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_filesystem = { version = "0.1.0", path = "../boost_filesystem" }
+boost_format = { version = "0.1.0", path = "../boost_format" }
+boost_intrusive = { version = "0.1.0", path = "../boost_intrusive" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_smart_ptr = { version = "0.1.0", path = "../boost_smart_ptr" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
